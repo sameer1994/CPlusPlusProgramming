@@ -59,6 +59,8 @@ void Print2DArray(int arr[][3]/*equivalent to int (*) arr[3] */,int rows,int col
         {
             cout<<arr[i][j];
         }
+    //technique 3
+    int (*ptr)[rows][cols] = (int(*)[rows][cols])arr;
 }
 int main(int c, char**argv)
 {
